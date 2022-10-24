@@ -7,6 +7,7 @@
     --bg-color-section: #F5F4FA;
     --primary-black-color: #000000;
     --gallery-gap: 30px;
+    --icon-color-primary: #AFB1B8;
 
 }
 
@@ -38,8 +39,7 @@ h1, h2, h3, p {
 .container.header {
     display: flex;
     align-items: center;
-    
-    
+
 }
 .page-header {
     border-bottom: 1px solid #ECECEC;      
@@ -163,7 +163,6 @@ h1, h2, h3, p {
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
-
 }
 
 /*заголовок в секции особливості*/
@@ -183,8 +182,20 @@ h1, h2, h3, p {
 .qualities > .item:not(:nth-last-child(-n+1)) {
     margin-right: var(--gallery-gap);
 }
+.icon-features {
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: var(--bg-color-section);
 
-
+}
+.icon-qualities {
+    fill: var(--title-text-color);
+}
+.icon-qualities:hover,  
+.icon-qualities:focus {
+    fill: var(--accent-color);
+}
 
 /*секція чим ми займаємося*/
 .jobs {
@@ -267,22 +278,38 @@ h1, h2, h3, p {
 }
 .client {
     display: flex;
-    flex-wrap: wrap;
-
-    margin-bottom: -1*var(--gallery-gap);
+    
 }
 .client >.item {
-    flex-basis: calc(100%-5*var(--gallery-gap)/ 6);  
-    outline: 1px solid tomato;
-    border: 1px #AFB1B8;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+       
+    border: 1px solid var(--icon-color-primary);
+    border-radius: 4px;
+    flex-basis: calc(100%-5*var(--gallery-gap)/ 6);      
+}
+.client >.item:hover, .item:focus {
+    border-color: var(--accent-color);
 }
 .client > .item:not(:nth-last-child(-n+1)) {
     margin-right: var(--gallery-gap);
 }
-.a-icon {
-    text-decoration: none;
-}
+/*посилання у секції постійні клієнти*/
+.clients-link {
+   display: block;
 
+}
+/*іконка у секції постійні клієнти*/
+.a-icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-color-primary);
+    background-position: center;
+}
+.a-icon:hover {
+    fill: var(--accent-color);
+}
 
 /*секція projects портфоліо*/
 
