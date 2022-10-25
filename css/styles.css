@@ -140,12 +140,13 @@ h1, h2, h3, p, strong {
     margin-right: 10px;
     cursor: pointer;
 
-    fill: var(--primary-text-color);    
-}
+    fill: var(--primary-text-color); 
+}   
 .icon-nav:hover,
 .icon-nav:focus {
     fill: var(--accent-color);
 }
+
 /*hero*/
 .hero {
      text-align: center;
@@ -258,8 +259,7 @@ h1, h2, h3, p, strong {
     margin-right: var(--gallery-gap);
 }
 .comand-text {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 32px;
     text-align: center;    
 }
 .names {
@@ -270,8 +270,38 @@ h1, h2, h3, p, strong {
     line-height: 1.19;
 }
 .people {
+    margin-bottom: 16px;
+    
     font-size: 16px;
     line-height: 1.19;
+}
+.comand-link {
+    display: block;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    cursor: pointer;
+
+    border-radius: 50%;    
+    background-color:  transparent;
+}
+.comand-link:hover,
+.comand-link:focus {
+    background-color: var(--accent-color);
+        
+}
+.icon-comand {
+    width: 20px;
+    height: 20px;
+    margin: 11px;
+ 
+    background-color: transparent;
+    fill: var(--icon-color-primary);    
+}
+.icon-comand:hover,
+.icon-comand:focus {
+    fill: var(--primary-white-color);
 }
 /*секція постійні клієнти*/
 .section-clients {
