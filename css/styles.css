@@ -30,6 +30,19 @@ h1, h2, h3, p, strong {
     margin-top: 0;
     margin-bottom: 0;
 }
+/*скриті заголовки*/
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 .list {
     list-style: none;
     margin-bottom: 0;
@@ -39,7 +52,6 @@ h1, h2, h3, p, strong {
 .container.header {
     display: flex;
     align-items: center;
-
 }
 .page-header {
     border-bottom: 1px solid #ECECEC;      
@@ -91,11 +103,9 @@ h1, h2, h3, p, strong {
 .logo>.logo-three {
     color: var(--primary-white-color);
        }
-
 .link {
     text-decoration: none;
 }
-
 /*стилізація навігації*/
 .linknav {
     color: var(--title-text-color);
@@ -121,10 +131,8 @@ h1, h2, h3, p, strong {
 }
 .item.navigation {
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
 }
-
 .icon-nav {
     width: 16px;
     height: 16px;
@@ -138,11 +146,9 @@ h1, h2, h3, p, strong {
 .icon-nav:focus {
     fill: var(--accent-color);
 }
-
 /*hero*/
 .hero {
- 
-    text-align: center;
+     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
@@ -152,7 +158,6 @@ h1, h2, h3, p, strong {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 .hero-title {
     margin-bottom: 30px;
@@ -163,21 +168,7 @@ h1, h2, h3, p, strong {
      line-height: 1.36;
      letter-spacing: 0.06em;
      text-transform: uppercase;
-
 }
-/*секція кнопок у потрфоліо*/
-.selector {
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-}
-.selector .item:not(:last-child) {
-    margin-right: 8px;
-}
-
-
 /*секція особливості*/
 .features {
     padding-top: 94px;
@@ -329,14 +320,26 @@ h1, h2, h3, p, strong {
 .a-icon:hover {
     fill: var(--accent-color);
 }
-
+/*секція кнопок у потрфоліо*/
+.selector {
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+.selector >.item:not(:last-child) {
+    margin-right: 8px;
+}
+.selector >.item:hover,
+.selector >.item:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 /*секція projects портфоліо*/
-
 .projects {
     padding-top: 94px;
     padding-bottom: 94px;  
 }
-
 .resources {
     font-size: 16px;
     line-height: 1.88;
@@ -352,6 +355,31 @@ h1, h2, h3, p, strong {
 }
 .cardlink {
     text-decoration: none;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+   
+    margin-bottom: -1*var(--gallery-gap);
+}
+.gallery > .item {
+    flex-basis: calc(100%-2*var(--gallery-gap)/ 3);    
+}
+.gallery > .item:not(:nth-last-child(-n+3)){
+    margin-bottom: var(--gallery-gap);
+}
+.gallery > .item:not(:nth-child(3n+3)){
+    margin-right: var(--gallery-gap);
+}
+.gallery > .item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+/*текстовий контент в картках портфоліо*/
+.card-text {
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 /*футер*/
 .page-footer {
@@ -497,40 +525,4 @@ h1, h2, h3, p, strong {
 .primary.portfolio {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/*скриті заголовки*/
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-/*ceкція в Портфоліо з галереєю картинок*/
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-   
-    margin-bottom: -1*var(--gallery-gap);
-}
-.gallery > .item {
-    flex-basis: calc(100%-2*var(--gallery-gap)/ 3);    
-}
 
-.gallery > .item:not(:nth-last-child(-n+3)){
-    margin-bottom: var(--gallery-gap);
-}
-.gallery > .item:not(:nth-child(3n+3)){
-    margin-right: var(--gallery-gap);
-}
-/*текстовий контент в картках портфоліо*/
-.card-text {
-    padding: 20px 24px;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
-}
