@@ -26,7 +26,7 @@ img {
     padding-right: 15px;
     margin: 0 auto;
 }
-h1, h2, h3, p {
+h1, h2, h3, p, strong {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -119,6 +119,25 @@ h1, h2, h3, p {
 .addressnav:focus {
     color: var(--accent-color);
 }
+.item.navigation {
+    display: flex;
+    align-items: center;
+    
+}
+
+.icon-nav {
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+
+    fill: var(--primary-text-color);    
+}
+.icon-nav:hover,
+.icon-nav:focus {
+    fill: var(--accent-color);
+}
 
 /*hero*/
 .hero {
@@ -165,7 +184,7 @@ h1, h2, h3, p {
     padding-bottom: 94px;
 }
 
-/*заголовок в секции особливості*/
+/*заголовок в секции Особливості features*/
 .section.title {
     margin-bottom: 10px;
 }
@@ -174,7 +193,6 @@ h1, h2, h3, p {
 }
 .qualities > .item {
     width: 270px;
-
 }
 .qualities > .item {
     flex-basis: calc(100%-3*var(--gallery-gap)/ 4);   
@@ -188,7 +206,6 @@ h1, h2, h3, p {
     border-radius: 4px;
     text-align: center;
     background-color: var(--bg-color-section);
-
 }
 .icon-qualities {
     fill: var(--title-text-color);
@@ -201,7 +218,7 @@ h1, h2, h3, p {
     fill: var(--accent-color);
 }
 
-/*секція чим ми займаємося*/
+/*секція чим ми займаємося jobs*/
 .jobs {
     padding-top: 0;
     padding-bottom: 94px;
@@ -252,8 +269,7 @@ h1, h2, h3, p {
 .comand-text {
     padding-top: 30px;
     padding-bottom: 30px;
-    text-align: center;
-    
+    text-align: center;    
 }
 .names {
     margin-bottom: 10px;
@@ -302,7 +318,6 @@ h1, h2, h3, p {
 /*посилання у секції постійні клієнти*/
 .clients-link {
    display: block;
-
 }
 /*іконка у секції постійні клієнти*/
 .a-icon {
@@ -344,20 +359,22 @@ h1, h2, h3, p {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer {
-
-
+.main-footer {
+    display: flex;
     color:var(--primary-white-color);
-    
+}
+.footer {
+    margin-right: 70px;
+}
+.footer-secondary {
+    width: 206px;
 }
 .address {
     margin-top: 20px;
     margin-bottom: 0;
-    min-width: 231px;
-        
+    min-width: 231px;        
 }
-.addressfooter {
-    
+.addressfooter {    
     font-size: 14px;
     line-height: 2;
     font-style: normal;
@@ -376,15 +393,52 @@ h1, h2, h3, p {
     margin-bottom: 0;
 
 }
-.linkfooter {
-   
+.linkfooter {   
     display: inline-block;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-size: 14px;
     line-height: 2;
     font-style: normal;
+}
+.footer-attention {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 12px;
+     
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+/*іконки у футері*/
+.icon-list {
+    display: flex;
+}
+.icon-list >.item:not(:last-child){
+    margin-right: 10px;
+}
+.icon-footer-link {
+    display: block;
+    text-align: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
 
+    border-radius: 50%;    
+    background-color:  rgba(255, 255, 255, 0.1);
+}
+.icon-footer-link:hover,
+.icon-footer-link:focus {
+    background-color: var(--accent-color);
+}
+.icon-footer {
+    width: 20px;
+    height: 20px;
+    margin: 11px;
+ 
+    background-color: transparent;
+    fill: var(--primary-white-color);    
 }
 
 /*особливості*/
