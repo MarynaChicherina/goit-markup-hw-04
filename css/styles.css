@@ -192,9 +192,9 @@ h1, h2, h3, p {
 }
 .icon-qualities {
     fill: var(--title-text-color);
+    width: 70px;
+    height: 70px;
     margin: 25px 100px;
-
-
 }
 .icon-qualities:hover,  
 .icon-qualities:focus {
