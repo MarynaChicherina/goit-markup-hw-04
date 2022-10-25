@@ -186,11 +186,15 @@ h1, h2, h3, p {
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
+    text-align: center;
     background-color: var(--bg-color-section);
 
 }
 .icon-qualities {
     fill: var(--title-text-color);
+    margin: 25px 100px;
+
+
 }
 .icon-qualities:hover,  
 .icon-qualities:focus {
