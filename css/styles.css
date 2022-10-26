@@ -285,8 +285,7 @@ h1, h2, h3, p, strong {
 .comand-link:hover,
 .comand-link:focus {
     background-color: var(--accent-color);
-    color: var(--primary-white-color);
-        
+    color: var(--primary-white-color);      
 }
 .icon-comand {
     display: inline-block;
@@ -320,34 +319,38 @@ h1, h2, h3, p, strong {
     
 }
 .client >.item {
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
-       
-    border: 1px solid var(--icon-color-primary);
-    border-radius: 4px;
-    flex-basis: calc(100%-5*var(--gallery-gap)/ 6);      
-}
-.client >.item:hover, .item:focus {
-    border-color: var(--accent-color);
+   flex-basis: calc(100%-5*var(--gallery-gap)/ 6);      
 }
 .client > .item:not(:nth-last-child(-n+1)) {
     margin-right: var(--gallery-gap);
 }
 /*посилання у секції постійні клієнти*/
 .clients-link {
-   display: block;
+   display: inline-flex;
+   align-items: center;
+   width: 170px;
+   height: 92px;
+   border-radius: 4px; 
+   cursor: pointer;
+
+   border: 1px solid var(--icon-color-primary);
+   background-color: var(--primary-white-color);
+   color: var(--icon-color-primary);
+}
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--accent-color);
+    background-color: var(--primary-white-color);
+    color: var(--accent-color);
 }
 /*іконка у секції постійні клієнти*/
 .a-icon {
-    width: 106px;
-    height: 60px;
-    fill: var(--icon-color-primary);
+    margin: auto auto;
     background-position: center;
+
+    fill: currentColor;    
 }
-.a-icon:hover {
-    fill: var(--accent-color);
-}
+
 /*секція кнопок у потрфоліо*/
 .selector {
     margin-top: 0;
