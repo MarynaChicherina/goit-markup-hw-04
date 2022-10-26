@@ -80,13 +80,9 @@ h1, h2, h3, p, strong {
     margin-left: auto;
 }
 .list.nav .item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
-.list.nav .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
+
 /*logo*/
 .logo {
     margin-top: 0;
@@ -122,6 +118,13 @@ h1, h2, h3, p, strong {
     color: var(--accent-color);
 }
 .addressnav {
+    display: inline-flex;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.14;
@@ -131,24 +134,13 @@ h1, h2, h3, p, strong {
 .addressnav:focus {
     color: var(--accent-color);
 }
-.item.navigation {
-    display: flex;
-    align-items: center; 
-}
-.icon-nav {
+.addressnav > .icon-nav {
     width: 16px;
     height: 16px;
-    display: block;
-    margin-right: 10px;
-    cursor: pointer;
+    margin: auto 10px auto 0;
 
-    fill: var(--primary-text-color); 
+    fill: currentColor; 
 }   
-.icon-nav:hover,
-.icon-nav:focus {
-    fill: var(--accent-color);
-}
-
 /*hero*/
 .hero {
      text-align: center;
