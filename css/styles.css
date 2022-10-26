@@ -1,3 +1,5 @@
+
+
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -193,17 +195,19 @@ h1, h2, h3, p, strong {
     margin-right: var(--gallery-gap);
 }
 .icon-features {
+    display: flex;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    text-align: center;
     background-color: var(--bg-color-section);
 }
 .icon-qualities {
+    display: inline-block;
+    margin: auto auto;
     fill: var(--title-text-color);
     width: 70px;
     height: 70px;
-    margin: 25px 100px;
+
 }
 .icon-qualities:hover,  
 .icon-qualities:focus {
@@ -276,32 +280,34 @@ h1, h2, h3, p, strong {
     line-height: 1.19;
 }
 .comand-link {
-    display: block;
-    text-align: center;
+    display: flex;
     width: 44px;
     height: 44px;
     padding: 0;
     cursor: pointer;
 
-    border-radius: 50%;    
-    background-color:  transparent;
+    border-radius: 50%;
+    color: var(--icon-color-primary);    
+    background-color:  var(--primary-white-color);
 }
 .comand-link:hover,
 .comand-link:focus {
     background-color: var(--accent-color);
+    color: var(--primary-white-color);
         
 }
 .icon-comand {
+    display: inline-block;
+    margin: auto auto;
     width: 20px;
     height: 20px;
-    margin: 11px;
  
     background-color: transparent;
-    fill: var(--icon-color-primary);    
+    fill: currentColor;    
 }
 .icon-comand:hover,
 .icon-comand:focus {
-    fill: var(--primary-white-color);
+    fill: currentColor;
 }
 /*секція постійні клієнти*/
 .section-clients {
@@ -477,13 +483,13 @@ h1, h2, h3, p, strong {
     margin-right: 10px;
 }
 .icon-footer-link {
-    display: block;
-    text-align: center;
+    display: flex;
     width: 44px;
     height: 44px;
     padding: 0;
 
-    border-radius: 50%;    
+    border-radius: 50%;
+    color: var(--primary-white-color);    
     background-color:  rgba(255, 255, 255, 0.1);
 }
 .icon-footer-link:hover,
@@ -491,12 +497,13 @@ h1, h2, h3, p, strong {
     background-color: var(--accent-color);
 }
 .icon-footer {
+    display: inline-block;
+    margin: auto auto;
     width: 20px;
     height: 20px;
-    margin: 11px;
  
     background-color: transparent;
-    fill: var(--primary-white-color);    
+    fill: currentColor;    
 }
 
 /*особливості*/
