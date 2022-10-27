@@ -118,8 +118,9 @@ h1, h2, h3, p, strong {
     color: var(--accent-color);
 }
 .addressnav {
-    display: inline-flex;
+    display: flex;
     text-align: center;
+    justify-content: center;
     text-decoration: none;
     cursor: pointer;
     padding-top: 32px;
@@ -137,13 +138,12 @@ h1, h2, h3, p, strong {
 .addressnav > .icon-nav {
     width: 16px;
     height: 16px;
-    margin: auto 10px auto 0;
+    margin-right: 10px;
 
     fill: currentColor; 
 }   
 /*hero*/
 .hero {
-     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
@@ -154,8 +154,11 @@ h1, h2, h3, p, strong {
     background-position: center;
     background-size: cover;
 }
+.hero-main {
+    text-align: center;
+}
 .hero-title {
-    margin-bottom: 30px;
+     margin-bottom: 30px;
 
      color: var(--primary-white-color);
      font-weight: 900;
@@ -179,6 +182,7 @@ h1, h2, h3, p, strong {
 }
 .qualities > .item {
     width: 270px;
+
 }
 .qualities > .item {
     flex-basis: calc(100%-3*var(--gallery-gap)/ 4);   
@@ -188,18 +192,20 @@ h1, h2, h3, p, strong {
 }
 .icon-features {
     display: flex;
+    text-align: center;
+    justify-content: center;
+    
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: var(--bg-color-section);
 }
 .icon-qualities {
-    display: inline-block;
-    margin: auto auto;
-    fill: var(--title-text-color);
+    margin: auto;
     width: 70px;
     height: 70px;
 
+    fill: var(--title-text-color);
 }
 .icon-qualities:hover,  
 .icon-qualities:focus {
@@ -288,7 +294,6 @@ h1, h2, h3, p, strong {
     color: var(--primary-white-color);      
 }
 .icon-comand {
-    display: inline-block;
     margin: auto auto;
     width: 20px;
     height: 20px;
@@ -326,8 +331,9 @@ h1, h2, h3, p, strong {
 }
 /*посилання у секції постійні клієнти*/
 .clients-link {
-   display: inline-flex;
+   display: flex;
    align-items: center;
+   justify-content: center;
    width: 170px;
    height: 92px;
    border-radius: 4px; 
@@ -345,7 +351,6 @@ h1, h2, h3, p, strong {
 }
 /*іконка у секції постійні клієнти*/
 .a-icon {
-    margin: auto auto;
     background-position: center;
 
     fill: currentColor;    
@@ -538,7 +543,7 @@ h1, h2, h3, p, strong {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
-.hero > .button.primary {
+.hero-main > .button.primary {
     padding: 10px 32px;
     min-width: 216px;
     text-align: center;
@@ -549,6 +554,7 @@ h1, h2, h3, p, strong {
     line-height: 1.88;
     letter-spacing: 0.06em;
 }
+
 .button.portfolio {
     padding: 6px 22px;
     min-width: 73px;
