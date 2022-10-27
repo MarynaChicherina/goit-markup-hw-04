@@ -127,6 +127,7 @@ h1, h2, h3, p, strong {
     padding-bottom: 32px;
     
     color: var(--primary-text-color);
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -148,6 +149,7 @@ h1, h2, h3, p, strong {
     padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
+    margin: 0 auto;
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), var(--bg-color-footer-hero)),url("../images/hero.jpg");
     background-repeat: no-repeat;
@@ -279,9 +281,11 @@ h1, h2, h3, p, strong {
 }
 .comand-link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
-    padding: 0;
+
     cursor: pointer;
 
     border-radius: 50%;
@@ -294,11 +298,8 @@ h1, h2, h3, p, strong {
     color: var(--primary-white-color);      
 }
 .icon-comand {
-    margin: auto auto;
-    width: 20px;
-    height: 20px;
- 
     background-color: transparent;
+
     fill: currentColor;    
 }
 .icon-comand:hover,
@@ -484,6 +485,8 @@ h1, h2, h3, p, strong {
 }
 .icon-footer-link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     padding: 0;
@@ -497,8 +500,6 @@ h1, h2, h3, p, strong {
     background-color: var(--accent-color);
 }
 .icon-footer {
-    display: inline-block;
-    margin: auto auto;
     width: 20px;
     height: 20px;
  
